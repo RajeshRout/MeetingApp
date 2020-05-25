@@ -76,6 +76,8 @@ namespace MeetingApp.API.Controllers
             {
                 token = tokenHandler.WriteToken(token)
             });
+
         }
+
     }
 }
