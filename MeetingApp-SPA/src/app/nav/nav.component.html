@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <div class="container">
 
-    <a class="navbar-brand" [routerLink]="['/home']"><i class="fa fa-meetup"></i> MeetApp</a>
+    <a class="navbar-brand" [routerLink]="['/home']"><i class="fa fa-meetup"></i> PinguStudio</a>
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active">
@@ -17,7 +17,7 @@
 
     <div *ngIf="loggedIn()" class="dropdown" dropdown>
       <a class="dropdown-toggle text-light" dropdownToggle>
-        Welcome {{authService.decodedToken?.unique_name | titlecase}}
+       Hello {{authService.decodedToken?.unique_name | titlecase}}
       </a>
 
       <div class="dropdown-menu mt-3" *dropdownMenu>
